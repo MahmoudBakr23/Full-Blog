@@ -3,18 +3,18 @@
 <nav>
 <ul class="navbar right">
 <li>
-<a href="#">Okay</a>
+<%= link_to  "New Article", new_article_path %>
 </li>
 <li>
-<a href="#">Okay</a>
+<a href="#">Sign up</a>
 </li>
 <li>
-<a href="#">Okay</a>
+<a href="#">Log in</a>
 </li>
 </ul>
 </nav>
 
-<h1>Articles</h1>
+<h1 class="hs">Articles</h1>
 <ul id="articles">
 <%@articles.each do |article| %>
 <li>
@@ -23,4 +23,5 @@
 <%end%>
 </ul>
 
-<%= link_to  "New Article", new_article_path, class: "new_article" %>
+<%= render partial: 'footer' %>
+

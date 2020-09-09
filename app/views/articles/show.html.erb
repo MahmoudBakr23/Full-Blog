@@ -1,8 +1,17 @@
 <%= render partial: 'frameworks' %>
 
-<h1><%=@article.title%></h1>
-<p><%=@article.body%></p>
+<h1 class="hs"><%=@article.title%></h1>
+<p class="article_body"><%=@article.body%></p>
 
+<ul class="navigation">
+<li>
 <%= link_to  "Back", articles_path %>
+</li>
+<li>
 <%= link_to  "Delete", article_path(@article), method: :delete, data: {confirm: "Are you sure?"} %>
+</li>
+<li>
 <%= link_to  "Edit", edit_article_path(@article) %>
+</li>
+</ul>
+<%= render partial: 'footer' %>
