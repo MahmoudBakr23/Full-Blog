@@ -1,3 +1,43 @@
 // Place all the styles related to the articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    justify-content: start;
+    li {
+        margin: 0 0.5rem;
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.btn-floating.btn-large {
+    font-size: 3rem;
+}
+
+.new_article {
+    width: 50%;
+    margin: 0 auto;
+
+    #article_title {
+        border-top: 2px solid green;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    textarea {
+        outline: none;
+    }
+}

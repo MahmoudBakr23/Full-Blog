@@ -4,15 +4,16 @@
 <li><%=error%></li>
 <%end%>
 </ul>
-<p>
+
 <%= f.label :title %>
 <%= f.text_field :title %>
-</p>
-<p>
+
+
 <%= f.label :body %>
 <%= f.text_area :body %>
-</p>
-<p>
-<%= f.submit %>
-</p>
+
+<%= f.submit "+", class: "btn-floating btn-large waves-effect waves-light red submit"%>
+<%# <a class="btn-floating btn-large waves-effect waves-light red"></a> %>
+
+
 <% end %>
